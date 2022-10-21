@@ -67,7 +67,7 @@ class _VetsAllScreenState extends State<VetsAllScreen> {
                 width: 324.w,
                 height: 154.h,
                 padding: EdgeInsets.only(
-                    left: 13.w, top: 20.h, bottom: 4.h, right: 130.w),
+                    left: 145.w, top: 20.h, bottom: 4.h, right: 18.w),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(4.r),
                   color: secondary,
@@ -87,24 +87,36 @@ class _VetsAllScreenState extends State<VetsAllScreen> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      "Our Choice",
-                      style: homeWhiteSubTitle,
+                      "Featured Vet",
+                      style: vetFeatured,
+                    ),
+                    SizedBox(
+                      width: 161.w,
+                      height: 30.h,
+                      child: Text(
+                        "Dr. Gracie Trisha",
+                        style: vetNameBigWhite,
+                        overflow: TextOverflow.ellipsis,
+                      ),
                     ),
                     Text(
-                      "Magnus Premium Especial",
-                      style: homeWhiteTitle,
+                      "Cat Diseases Specialist",
+                      style: vetDescFeatured,
                     ),
                     SizedBox(
-                      height: 14.h,
+                      height: 12.h,
                     ),
                     SizedBox(
-                      width: 140.w,
+                      width: 154.w,
                       height: 32.h,
                       child: ElevatedButton(
                         onPressed: () {},
-                        child: Text(
-                          "Beli Sekarang",
-                          style: homeBlackButton,
+                        child: Row(
+                          children: [
+                            Image.asset('assets/icons/chat-icon.png', width: 18.w, height: 18.h,),
+                            SizedBox(width: 6.w,),
+                            Text("Consule Now", style: vetBlackOnButton,),
+                          ],
                         ),
                         style: ButtonStyle(
                           backgroundColor:
@@ -251,7 +263,7 @@ class _VetsAllScreenState extends State<VetsAllScreen> {
                 height: 16.h,
               ),
               Text(
-                "Recommendation For You",
+                "Explore The Vets",
                 style: homeCategoryTitle,
               ),
               SizedBox(
@@ -262,7 +274,7 @@ class _VetsAllScreenState extends State<VetsAllScreen> {
                 children: [
                   SizedBox(
                     width: 154.w,
-                    height: 242.h,
+                    height: 192.h,
                     child: ElevatedButton(
                       onPressed: () {
                         Navigator.push(
@@ -276,7 +288,7 @@ class _VetsAllScreenState extends State<VetsAllScreen> {
                       ),
                       child: Container(
                         width: 154.w,
-                        height: 242.h,
+                        height: 192.h,
                         decoration: BoxDecoration(
                           color: whitish,
                           borderRadius: BorderRadius.circular(4.r),
@@ -294,9 +306,9 @@ class _VetsAllScreenState extends State<VetsAllScreen> {
                                 topRight: Radius.circular(4.r),
                               ),
                               child: Image.network(
-                                "https://i.pinimg.com/1200x/da/66/47/da6647f1615e67791fa6644d1a7663fa.jpg",
+                                "https://www.pinnaclecare.com/wp-content/uploads/2017/12/bigstock-African-young-doctor-portrait-28825394.jpg",
                                 width: 154.w,
-                                height: 146.h,
+                                height: 120.h,
                                 fit: BoxFit.cover,
                               ),
                             ),
@@ -311,14 +323,14 @@ class _VetsAllScreenState extends State<VetsAllScreen> {
                                   SizedBox(
                                     width: 140.w,
                                     child: Text(
-                                      "Pharma Hemp Chicken Treats",
-                                      style: producOntItemTitle,
+                                      "Dr. Naegha Blak",
+                                      style: vetAllTitle,
                                       overflow: TextOverflow.ellipsis,
                                     ),
                                   ),
                                   Text(
-                                    "Rp 56.000",
-                                    style: producOntItemPrice,
+                                    "Cat Specialist",
+                                    style: vetAllDesc,
                                   ),
                                   SizedBox(
                                     height: 4.h,
@@ -336,10 +348,10 @@ class _VetsAllScreenState extends State<VetsAllScreen> {
                                       ),
                                       Text(
                                         "4.5",
-                                        style: producOntItemRating,
+                                        style: vetAllRating,
                                       ),
                                       SizedBox(
-                                        width: 2.w,
+                                        width: 6.w,
                                       ),
                                       Container(
                                         width: 1.w,
@@ -347,29 +359,11 @@ class _VetsAllScreenState extends State<VetsAllScreen> {
                                         color: black.withOpacity(0.60),
                                       ),
                                       SizedBox(
-                                        width: 2.w,
+                                        width: 6.w,
                                       ),
-                                      Text(
-                                        "Terjual 210",
-                                        style: producOntItemRating,
-                                      ),
-                                    ],
-                                  ),
-                                  SizedBox(
-                                    height: 2.h,
-                                  ),
-                                  Row(
-                                    mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
-                                    children: [
                                       Text(
                                         "Bandung",
-                                        style: producOntItemLocation,
-                                      ),
-                                      Image.asset(
-                                        "assets/icons/cat-icon.png",
-                                        width: 14.w,
-                                        height: 14.h,
+                                        style: vetAllRating,
                                       ),
                                     ],
                                   ),
@@ -383,16 +377,21 @@ class _VetsAllScreenState extends State<VetsAllScreen> {
                   ),
                   SizedBox(
                     width: 154.w,
-                    height: 242.h,
+                    height: 192.h,
                     child: ElevatedButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => const ProductDetailScreen()),
+                        );
+                      },
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.transparent,
                         padding: EdgeInsets.zero,
                       ),
                       child: Container(
                         width: 154.w,
-                        height: 242.h,
+                        height: 192.h,
                         decoration: BoxDecoration(
                           color: whitish,
                           borderRadius: BorderRadius.circular(4.r),
@@ -410,9 +409,9 @@ class _VetsAllScreenState extends State<VetsAllScreen> {
                                 topRight: Radius.circular(4.r),
                               ),
                               child: Image.network(
-                                "https://i.pinimg.com/1200x/da/66/47/da6647f1615e67791fa6644d1a7663fa.jpg",
+                                "https://www.pinnaclecare.com/wp-content/uploads/2017/12/bigstock-African-young-doctor-portrait-28825394.jpg",
                                 width: 154.w,
-                                height: 146.h,
+                                height: 120.h,
                                 fit: BoxFit.cover,
                               ),
                             ),
@@ -427,14 +426,14 @@ class _VetsAllScreenState extends State<VetsAllScreen> {
                                   SizedBox(
                                     width: 140.w,
                                     child: Text(
-                                      "Pharma Hemp Chicken Treats",
-                                      style: producOntItemTitle,
+                                      "Dr. Naegha Blak",
+                                      style: vetAllTitle,
                                       overflow: TextOverflow.ellipsis,
                                     ),
                                   ),
                                   Text(
-                                    "Rp 56.000",
-                                    style: producOntItemPrice,
+                                    "Cat Specialist",
+                                    style: vetAllDesc,
                                   ),
                                   SizedBox(
                                     height: 4.h,
@@ -452,10 +451,10 @@ class _VetsAllScreenState extends State<VetsAllScreen> {
                                       ),
                                       Text(
                                         "4.5",
-                                        style: producOntItemRating,
+                                        style: vetAllRating,
                                       ),
                                       SizedBox(
-                                        width: 2.w,
+                                        width: 6.w,
                                       ),
                                       Container(
                                         width: 1.w,
@@ -463,29 +462,11 @@ class _VetsAllScreenState extends State<VetsAllScreen> {
                                         color: black.withOpacity(0.60),
                                       ),
                                       SizedBox(
-                                        width: 2.w,
+                                        width: 6.w,
                                       ),
-                                      Text(
-                                        "Terjual 210",
-                                        style: producOntItemRating,
-                                      ),
-                                    ],
-                                  ),
-                                  SizedBox(
-                                    height: 2.h,
-                                  ),
-                                  Row(
-                                    mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
-                                    children: [
                                       Text(
                                         "Bandung",
-                                        style: producOntItemLocation,
-                                      ),
-                                      Image.asset(
-                                        "assets/icons/dog-icon.png",
-                                        width: 14.w,
-                                        height: 14.h,
+                                        style: vetAllRating,
                                       ),
                                     ],
                                   ),

@@ -202,3 +202,44 @@ TextStyle producOntItemLocation = GoogleFonts.poppins(
   color: black.withOpacity(0.75),
 );
 
+TextStyle vetFeatured = GoogleFonts.poppins(
+  fontSize: 13.sp,
+  fontWeight: FontWeight.w600,
+  color: HexColor('#78E9FF'),
+);
+
+TextStyle vetNameBigWhite = GoogleFonts.poppins(
+  fontSize: 19.sp,
+  fontWeight: FontWeight.w700,
+  color: whitish,
+);
+
+TextStyle vetDescFeatured = GoogleFonts.poppins(
+  fontSize: 11.sp,
+  fontWeight: FontWeight.w400,
+  color: whitish.withOpacity(0.90),
+);
+
+TextStyle vetBlackOnButton= GoogleFonts.poppins(
+  fontSize: 12.sp,
+  fontWeight: FontWeight.w600,
+  color: black,
+);
+
+TextStyle vetAllTitle= GoogleFonts.poppins(
+  fontSize: 13.sp,
+  fontWeight: FontWeight.w600,
+  color: black,
+);
+
+TextStyle vetAllDesc= GoogleFonts.poppins(
+  fontSize: 11.sp,
+  fontWeight: FontWeight.w400,
+  color: black.withOpacity(0.80),
+);
+
+TextStyle vetAllRating = GoogleFonts.poppins(
+  fontSize: 10.sp,
+  fontWeight: FontWeight.w500,
+  color: black.withOpacity(0.80),
+);
