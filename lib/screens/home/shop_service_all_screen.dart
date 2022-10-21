@@ -20,20 +20,39 @@ class _ShopServiceAllState extends State<ShopServiceAll> {
       backgroundColor: neutral,
       appBar: PreferredSize(
         preferredSize: Size.fromHeight(66.h),
-        child: AppBar(
-          primary: true,
-          backgroundColor: whitish,
-          elevation: 4,
-          centerTitle: true,
-          leading: IconButton(
-            onPressed: () {
-              Navigator.pop(context);
-            },
-            icon: Image.asset("assets/icons/arrow-left-icon.png"),
+        child: Container(
+          decoration: BoxDecoration(
+            color: whitish,
+            boxShadow: [
+              buildPrimaryBoxShadow(),
+            ]
           ),
-          title: Text(
-            "Shop & Services",
-            style: appBarTitle,
+          padding: EdgeInsets.only(
+            top: 20.h,
+            right: 18.w,
+            bottom: 10.h,
+            left: 18.w
+          ),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              IconButton(
+                onPressed: () {
+                  Navigator.pop(context);
+                },
+                icon: Image.asset("assets/icons/arrow-left-icon.png"),
+              ),
+              Text(
+                "Shop & Services",
+                style: appBarTitle,
+              ),
+              Container(
+                width: 29.w,
+                height: 29.h,
+                color: Colors.transparent,
+              ),
+            ],
           ),
         ),
       ),

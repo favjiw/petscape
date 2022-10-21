@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:petscape/screens/home/shop_service_all_screen.dart';
+import 'package:petscape/screens/vet/vets_all_screen.dart';
 import 'package:petscape/shared/theme.dart';
 import 'package:petscape/widgets/style/boxShadow.dart';
 
@@ -386,12 +387,28 @@ class _HomeScreenState extends State<HomeScreen> {
                     SizedBox(
                       height: 32.h,
                     ),
-                    Text(
-                      "Vets Recommendation",
-                      style: homeCategoryTitle,
-                    ),
-                    SizedBox(
-                      height: 12.h,
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        Text(
+                          "Vets Recommendation",
+                          style: homeCategoryTitle,
+                        ),
+                        TextButton(
+                          onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(builder: (context) => const VetsAllScreen()),
+                            );
+                          },
+
+                          child: Text(
+                            "See All",
+                            style: homeAllButton,
+                          ),
+                        ),
+                      ],
                     ),
                     ListView.builder(
                         itemCount: 5,

@@ -26,7 +26,7 @@ class _ProductItemScreenState extends State<ProductItemScreen> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 SizedBox(
-                  height: 40.h,
+                  height: 20.h,
                 ),
                 Row(
                   children: [
@@ -220,7 +220,9 @@ class _ProductItemScreenState extends State<ProductItemScreen> {
                       width: 154.w,
                       height: 242.h,
                       child: ElevatedButton(
-                        onPressed: () {},
+                        onPressed: () {
+
+                        },
                         style: ElevatedButton.styleFrom(
                           backgroundColor: Colors.transparent,
                           padding: EdgeInsets.zero,

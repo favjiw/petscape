@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:petscape/screens/product/product_detail_screen.dart';
 import 'package:petscape/shared/theme.dart';
 import 'package:petscape/widgets/style/boxShadow.dart';
 
@@ -26,7 +27,7 @@ class _FoodItemScreenState extends State<FoodItemScreen> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 SizedBox(
-                  height: 40.h,
+                  height: 20.h,
                 ),
                 Row(
                   children: [
@@ -273,7 +274,12 @@ class _FoodItemScreenState extends State<FoodItemScreen> {
                       width: 154.w,
                       height: 242.h,
                       child: ElevatedButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => const ProductDetailScreen()),
+                          );
+                        },
                         style: ElevatedButton.styleFrom(
                           backgroundColor: Colors.transparent,
                           padding: EdgeInsets.zero,
