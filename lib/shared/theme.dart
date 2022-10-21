@@ -243,3 +243,45 @@ TextStyle vetAllRating = GoogleFonts.poppins(
   fontWeight: FontWeight.w500,
   color: black.withOpacity(0.80),
 );
+
+TextStyle vetDetailName = GoogleFonts.poppins(
+  fontSize: 20.sp,
+  fontWeight: FontWeight.w600,
+  color: black,
+);
+
+TextStyle vetDetailJob = GoogleFonts.poppins(
+  fontSize: 16.sp,
+  fontWeight: FontWeight.w500,
+  color: black.withOpacity(0.80),
+);
+
+TextStyle vetDetailLocation = GoogleFonts.poppins(
+  fontSize: 13.5.sp,
+  fontWeight: FontWeight.w400,
+  color: black.withOpacity(0.75),
+);
+
+TextStyle vetDetailIDTitle = GoogleFonts.poppins(
+  fontSize: 10.5.sp,
+  fontWeight: FontWeight.w500,
+  color: black.withOpacity(0.70),
+);
+
+TextStyle vetDetailIDBig = GoogleFonts.poppins(
+  fontSize: 14.sp,
+  fontWeight: FontWeight.w500,
+  color: black,
+);
+
+TextStyle vetDetailIDBigGray = GoogleFonts.poppins(
+  fontSize: 14.sp,
+  fontWeight: FontWeight.w400,
+  color: black.withOpacity(0.5),
+);
+
+TextStyle vetDetailContact = GoogleFonts.poppins(
+  fontSize: 14.sp,
+  fontWeight: FontWeight.w500,
+  color: black.withOpacity(0.8),
+);

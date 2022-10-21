@@ -16,32 +16,7 @@ class _ProductDetailScreenState extends State<ProductDetailScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: neutral,
-      // appBar: PreferredSize(
-      //   preferredSize: Size.fromHeight(66.h),
-      //   child: AppBar(
-      //     primary: true,
-      //     backgroundColor: whitish,
-      //     elevation: 0,
-      //     centerTitle: true,
-      //     leading: IconButton(
-      //       onPressed: () {
-      //         Navigator.pop(context);
-      //       },
-      //       icon: Image.asset("assets/icons/arrow-left-icon.png"),
-      //     ),
-      //     title: Text(
-      //       "Detail Product",
-      //       style: appBarTitle,
-      //     ),
-      //     actions: [
-      //       IconButton(
-      //         onPressed: () {},
-      //         icon: Image.asset("assets/icons/bag-icon.png"),
-      //       ),
-      //     ],
-      //   ),
-      // ),
+      backgroundColor: whitish,
       appBar: PreferredSize(
         preferredSize: Size.fromHeight(66.h),
         child: Container(

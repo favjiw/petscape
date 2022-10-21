@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'package:petscape/screens/product/product_detail_screen.dart';
+import 'package:petscape/screens/vet/vets_detail_screen.dart';
 import 'package:petscape/shared/theme.dart';
 import 'package:petscape/widgets/style/boxShadow.dart';
 
@@ -48,7 +49,7 @@ class _VetsAllScreenState extends State<VetsAllScreen> {
               ),
               IconButton(
                   onPressed: () {},
-                  icon: Image.asset("assets/icons/date-icon.png"),
+                  icon: Image.asset("assets/icons/date-icon.png", scale: 4),
               ),
             ],
           ),
@@ -279,7 +280,7 @@ class _VetsAllScreenState extends State<VetsAllScreen> {
                       onPressed: () {
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => const ProductDetailScreen()),
+                          MaterialPageRoute(builder: (context) => const VetsDetailScreen()),
                         );
                       },
                       style: ElevatedButton.styleFrom(
@@ -382,7 +383,7 @@ class _VetsAllScreenState extends State<VetsAllScreen> {
                       onPressed: () {
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => const ProductDetailScreen()),
+                          MaterialPageRoute(builder: (context) => const VetsDetailScreen()),
                         );
                       },
                       style: ElevatedButton.styleFrom(
