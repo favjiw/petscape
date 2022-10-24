@@ -285,3 +285,76 @@ TextStyle vetDetailContact = GoogleFonts.poppins(
   fontWeight: FontWeight.w500,
   color: black.withOpacity(0.8),
 );
+
+TextStyle vetBookTitle = GoogleFonts.poppins(
+  fontSize: 20.sp,
+  fontWeight: FontWeight.w600,
+  color: black,
+);
+
+TextStyle vetBookPart = GoogleFonts.poppins(
+  fontSize: 14.sp,
+  fontWeight: FontWeight.w500,
+  color: primary,
+);
+
+TextStyle vetBookSubTitle= GoogleFonts.poppins(
+  fontSize: 14.sp,
+  fontWeight: FontWeight.w600,
+  color: black.withOpacity(0.65),
+);
+
+TextStyle vetBookWhiteOnButton= GoogleFonts.poppins(
+  fontSize: 16.sp,
+  fontWeight: FontWeight.w600,
+  color: whitish,
+);
+
+TextStyle vetBookDayOnPrimary= GoogleFonts.poppins(
+  fontSize: 12.sp,
+  fontWeight: FontWeight.w500,
+  color: HexColor('#FFFDF9'),
+);
+
+TextStyle vetBookDateOnPrimary= GoogleFonts.poppins(
+  fontSize: 20.sp,
+  fontWeight: FontWeight.w600,
+  color: whitish,
+);
+
+TextStyle vetBookDayOnWhite= GoogleFonts.poppins(
+  fontSize: 12.sp,
+  fontWeight: FontWeight.w500,
+  color: black.withOpacity(0.75),
+);
+
+TextStyle vetBookDateOnWhite= GoogleFonts.poppins(
+  fontSize: 20.sp,
+  fontWeight: FontWeight.w600,
+  color: black,
+);
+
+TextStyle vetBookOnBtnWhite= GoogleFonts.poppins(
+  fontSize: 16.sp,
+  fontWeight: FontWeight.w500,
+  color: whitish,
+);
+
+TextStyle vetBookClockOnGray= GoogleFonts.poppins(
+  fontSize: 16.sp,
+  fontWeight: FontWeight.w500,
+  color: black.withOpacity(0.60),
+);
+
+TextStyle vetBookClockOnWhite= GoogleFonts.poppins(
+  fontSize: 16.sp,
+  fontWeight: FontWeight.w500,
+  color: black,
+);
+
+
+TextStyle vetBookClockOnPrimary= GoogleFonts.poppins(
+  fontSize: 16.sp,
+  fontWeight: FontWeight.w500,
+  color: whitish,
+);

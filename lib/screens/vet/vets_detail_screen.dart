@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'package:petscape/screens/product/product_detail_screen.dart';
+import 'package:petscape/screens/vet/vets_booking_screen.dart';
 import 'package:petscape/shared/theme.dart';
 import 'package:petscape/widgets/style/boxShadow.dart';
 
@@ -327,7 +328,12 @@ class _VetsDetailScreenState extends State<VetsDetailScreen> {
                 width: 197.w,
                 height: 42.h,
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => const VetsBookingOneScreen()),
+                    );
+                  },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: primary,
                   ),
