@@ -352,9 +352,81 @@ TextStyle vetBookClockOnWhite= GoogleFonts.poppins(
   color: black,
 );
 
-
 TextStyle vetBookClockOnPrimary= GoogleFonts.poppins(
   fontSize: 16.sp,
   fontWeight: FontWeight.w500,
   color: whitish,
+);
+
+TextStyle vetBookInputLabel= GoogleFonts.poppins(
+  fontSize: 14.sp,
+  fontWeight: FontWeight.w600,
+  color: black.withOpacity(0.65),
+);
+
+TextStyle vetBookDropdownInput= GoogleFonts.poppins(
+  fontSize: 14.sp,
+  fontWeight: FontWeight.w500,
+  color: black,
+);
+
+TextStyle vetBookInputLabelSmall= GoogleFonts.poppins(
+  fontSize: 12.sp,
+  fontWeight: FontWeight.w600,
+  color: black.withOpacity(0.65),
+);
+
+TextStyle vetBookVetName= GoogleFonts.poppins(
+  fontSize: 16.sp,
+  fontWeight: FontWeight.w600,
+  color: black,
+);
+
+TextStyle vetBookVetJob = GoogleFonts.poppins(
+  fontSize: 13.sp,
+  fontWeight: FontWeight.w500,
+  color: black.withOpacity(0.75),
+);
+
+TextStyle vetBookEdit = GoogleFonts.poppins(
+  fontSize: 14.sp,
+  fontWeight: FontWeight.w500,
+  color: primary,
+  decoration: TextDecoration.underline
+);
+
+TextStyle vetBookLabelPrimary = GoogleFonts.poppins(
+    fontSize: 14.sp,
+    fontWeight: FontWeight.w500,
+    color: primary,
+);
+
+TextStyle vetBookPlace = GoogleFonts.poppins(
+  fontSize: 13.sp,
+  fontWeight: FontWeight.w400,
+  color: black.withOpacity(0.80),
+);
+
+TextStyle vetBookDetLabel = GoogleFonts.poppins(
+  fontSize: 13.sp,
+  fontWeight: FontWeight.w500,
+  color: black.withOpacity(0.60),
+);
+
+TextStyle vetBookDetValue = GoogleFonts.poppins(
+  fontSize: 14.sp,
+  fontWeight: FontWeight.w500,
+  color: primary,
+);
+
+TextStyle vetBookOnPrimaryChip = GoogleFonts.poppins(
+  fontSize: 14.sp,
+  fontWeight: FontWeight.w600,
+  color: whitish,
+);
+
+TextStyle vetBookOnWhiteChip = GoogleFonts.poppins(
+  fontSize: 14.sp,
+  fontWeight: FontWeight.w600,
+  color: black,
 );
