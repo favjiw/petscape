@@ -430,3 +430,33 @@ TextStyle vetBookOnWhiteChip = GoogleFonts.poppins(
   fontWeight: FontWeight.w600,
   color: black,
 );
+
+TextStyle treatBookPetName = GoogleFonts.poppins(
+  fontSize: 14.sp,
+  fontWeight: FontWeight.w600,
+  color: black,
+);
+
+TextStyle treatBookPetLoc = GoogleFonts.poppins(
+  fontSize: 14.sp,
+  fontWeight: FontWeight.w400,
+  color: black.withOpacity(0.80),
+);
+
+TextStyle treatBookPrice = GoogleFonts.poppins(
+  fontSize: 14.sp,
+  fontWeight: FontWeight.w500,
+  color: black,
+);
+
+TextStyle treatBookLabel = GoogleFonts.poppins(
+  fontSize: 14.sp,
+  fontWeight: FontWeight.w600,
+  color: black.withOpacity(0.65),
+);
+
+TextStyle treatBookLoc = GoogleFonts.poppins(
+  fontSize: 13.sp,
+  fontWeight: FontWeight.w400,
+  color: black.withOpacity(0.80),
+);

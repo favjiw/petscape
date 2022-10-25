@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:petscape/screens/home/shop_service_all_screen.dart';
+import 'package:petscape/screens/product/treatment_detail_screen.dart';
 import 'package:petscape/screens/vet/vets_all_screen.dart';
 import 'package:petscape/shared/theme.dart';
 import 'package:petscape/widgets/style/boxShadow.dart';
@@ -348,7 +349,10 @@ class _HomeScreenState extends State<HomeScreen> {
                         ),
                         InkWell(
                           onTap: () {
-                            //change page to vets treatment
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(builder: (context) => const TreatmentDetailScreen()),
+                            );
                           },
                           child: SizedBox(
                             width: 60.w,
