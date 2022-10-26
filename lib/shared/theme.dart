@@ -460,3 +460,27 @@ TextStyle treatBookLoc = GoogleFonts.poppins(
   fontWeight: FontWeight.w400,
   color: black.withOpacity(0.80),
 );
+
+TextStyle cartItemName = GoogleFonts.poppins(
+  fontSize: 15.sp,
+  fontWeight: FontWeight.w600,
+  color: black,
+);
+
+TextStyle cartItemTotal = GoogleFonts.poppins(
+  fontSize: 13.sp,
+  fontWeight: FontWeight.w400,
+  color: black.withOpacity(0.80),
+);
+
+TextStyle cartItemPrice = GoogleFonts.poppins(
+  fontSize: 14.sp,
+  fontWeight: FontWeight.w600,
+  color: black,
+);
+
+TextStyle cartItemTotalPrice = GoogleFonts.poppins(
+  fontSize: 18.sp,
+  fontWeight: FontWeight.w600,
+  color: black,
+);

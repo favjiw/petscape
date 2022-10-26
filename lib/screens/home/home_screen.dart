@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:petscape/screens/home/pet_profile_screen.dart';
 import 'package:petscape/screens/home/shop_service_all_screen.dart';
 import 'package:petscape/screens/product/treatment_detail_screen.dart';
 import 'package:petscape/screens/vet/vets_all_screen.dart';
@@ -162,7 +163,10 @@ class _HomeScreenState extends State<HomeScreen> {
                               padding: EdgeInsets.only(right: 16.w),
                               child: InkWell(
                                 onTap: () {
-                                  //change page to pet profile
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(builder: (context) => const PetProfileScreen()),
+                                  );
                                 },
                                 child: ClipRRect(
                                   borderRadius: BorderRadius.circular(100.r),

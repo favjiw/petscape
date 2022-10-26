@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:petscape/screens/cart/cart_detail_screen.dart';
 import 'package:petscape/shared/theme.dart';
 import 'package:petscape/widgets/style/boxShadow.dart';
 
@@ -48,7 +49,11 @@ class _ProductDetailScreenState extends State<ProductDetailScreen> {
               ),
               IconButton(
                   onPressed: () {
-                    print("print");
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const CartDetailScreen()),
+                    );
                   },
                   icon: Image.asset("assets/icons/bag-icon.png"),
               ),
