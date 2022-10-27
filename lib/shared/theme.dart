@@ -484,3 +484,52 @@ TextStyle cartItemTotalPrice = GoogleFonts.poppins(
   fontWeight: FontWeight.w600,
   color: black,
 );
+
+TextStyle petNameBig = GoogleFonts.poppins(
+  fontSize: 20.sp,
+  fontWeight: FontWeight.w600,
+  color: black,
+);
+
+TextStyle petNameDesc = GoogleFonts.poppins(
+  fontSize: 14.sp,
+  fontWeight: FontWeight.w400,
+  color: black.withOpacity(0.80),
+);
+
+TextStyle petLabel = GoogleFonts.poppins(
+  fontSize: 13.sp,
+  fontWeight: FontWeight.w500,
+  color: black.withOpacity(0.60),
+);
+
+TextStyle petValue = GoogleFonts.poppins(
+  fontSize: 16.sp,
+  fontWeight: FontWeight.w500,
+  color: black,
+);
+
+TextStyle petHealth = GoogleFonts.poppins(
+  fontSize: 14.sp,
+  fontWeight: FontWeight.w500,
+  color: black,
+);
+
+TextStyle petDatePrimary = GoogleFonts.poppins(
+  fontSize: 11.sp,
+  fontWeight: FontWeight.w500,
+  color: primary,
+);
+
+TextStyle petDateBlack = GoogleFonts.poppins(
+  fontSize: 14.sp,
+  fontWeight: FontWeight.w500,
+  color: black,
+);
+
+
+TextStyle petDateDesc = GoogleFonts.poppins(
+  fontSize: 12.sp,
+  fontWeight: FontWeight.w400,
+  color: black.withOpacity(0.75),
+);
