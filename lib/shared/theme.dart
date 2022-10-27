@@ -613,4 +613,53 @@ TextStyle orderTotalTxt = GoogleFonts.poppins(
   color: black,
 );
 
+TextStyle feedDaily = GoogleFonts.poppins(
+  fontSize: 24.sp,
+  fontWeight: FontWeight.w600,
+  color: black,
+);
+
+TextStyle feedPostName = GoogleFonts.poppins(
+  fontSize: 15.sp,
+  fontWeight: FontWeight.w500,
+  color: black,
+);
+
+TextStyle feedPostTime = GoogleFonts.poppins(
+  fontSize: 13.sp,
+  fontWeight: FontWeight.w500,
+  color: black.withOpacity(0.50),
+);
+
+TextStyle feedDonationSmallBtn = GoogleFonts.poppins(
+  fontSize: 11.sp,
+  fontWeight: FontWeight.w500,
+  color: whitish,
+);
+
+TextStyle feedCaption = GoogleFonts.poppins(
+  fontSize: 14.sp,
+  fontWeight: FontWeight.w400,
+  color: black.withOpacity(0.85),
+);
+
+TextStyle feedDonationMoney = GoogleFonts.poppins(
+  fontSize: 14.sp,
+  fontWeight: FontWeight.w500,
+  color: black,
+);
+
+TextStyle feedDonationPercent = GoogleFonts.poppins(
+  fontSize: 14.sp,
+  fontWeight: FontWeight.w500,
+  color: primary,
+);
+
+TextStyle feedCounter = GoogleFonts.poppins(
+  fontSize: 13.sp,
+  fontWeight: FontWeight.w400,
+  color: black.withOpacity(0.80),
+);
+
+
 
