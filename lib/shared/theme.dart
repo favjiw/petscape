@@ -576,3 +576,41 @@ TextStyle orderItemDate = GoogleFonts.poppins(
   fontWeight: FontWeight.w400,
   color: black.withOpacity(0.80),
 );
+
+TextStyle orderStatusLabel = GoogleFonts.poppins(
+  fontSize: 14.sp,
+  fontWeight: FontWeight.w600,
+  color: black,
+);
+
+TextStyle orderBankAccount = GoogleFonts.poppins(
+  fontSize: 15.sp,
+  fontWeight: FontWeight.w400,
+  color: black,
+);
+
+TextStyle orderPaymentDeadline = GoogleFonts.poppins(
+  fontSize: 13.sp,
+  fontWeight: FontWeight.w400,
+  color: primary,
+);
+
+TextStyle orderLocation = GoogleFonts.poppins(
+  fontSize: 14.sp,
+  fontWeight: FontWeight.w400,
+  color: black.withOpacity(0.80),
+);
+
+TextStyle orderPriceSmall = GoogleFonts.poppins(
+  fontSize: 14.sp,
+  fontWeight: FontWeight.w500,
+  color: black,
+);
+
+TextStyle orderTotalTxt = GoogleFonts.poppins(
+  fontSize: 14.sp,
+  fontWeight: FontWeight.w400,
+  color: black,
+);
+
+
