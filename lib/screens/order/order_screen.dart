@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:hexcolor/hexcolor.dart';
+import 'package:petscape/screens/order/order_service_pending_screen.dart';
 import 'package:petscape/screens/order/order_service_success_screen.dart';
 import 'package:petscape/shared/theme.dart';
 import 'package:petscape/widgets/style/boxShadow.dart';
@@ -255,7 +256,12 @@ class _OrderScreenState extends State<OrderScreen> {
               ),
               SizedBox(height: 12.h,),
               ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const OrderServicePendingScreen()),
+                  );
+                },
                 style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.transparent,
                     padding: EdgeInsets.zero
