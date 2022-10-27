@@ -8,6 +8,8 @@ Color secondary = HexColor('#F47157');
 Color gray = HexColor('#C3C3C3');
 Color whitish = HexColor('#FFFFFF');
 Color neutral = HexColor('#FFFDF9');
+Color success = HexColor('46F942').withOpacity(0.10);
+Color pending = HexColor('FFD600').withOpacity(0.05);
 Color black = Colors.black;
 
 TextStyle homeWhiteTitle = GoogleFonts.poppins(
@@ -527,9 +529,50 @@ TextStyle petDateBlack = GoogleFonts.poppins(
   color: black,
 );
 
-
 TextStyle petDateDesc = GoogleFonts.poppins(
   fontSize: 12.sp,
   fontWeight: FontWeight.w400,
   color: black.withOpacity(0.75),
+);
+
+TextStyle orderTitle = GoogleFonts.poppins(
+  fontSize: 24.sp,
+  fontWeight: FontWeight.w600,
+  color: black,
+);
+
+TextStyle orderItemPrice = GoogleFonts.poppins(
+  fontSize: 13.sp,
+  fontWeight: FontWeight.w600,
+  color: black,
+);
+
+TextStyle orderItemTotal = GoogleFonts.poppins(
+  fontSize: 13.sp,
+  fontWeight: FontWeight.w500,
+  color: black,
+);
+
+TextStyle orderItemStatusPending = GoogleFonts.poppins(
+  fontSize: 11.sp,
+  fontWeight: FontWeight.w500,
+  color: HexColor('#FFD600'),
+);
+
+TextStyle orderItemStatusSuccess = GoogleFonts.poppins(
+  fontSize: 11.sp,
+  fontWeight: FontWeight.w500,
+  color: HexColor('#46F942'),
+);
+
+TextStyle orderItemID = GoogleFonts.poppins(
+  fontSize: 16.sp,
+  fontWeight: FontWeight.w600,
+  color: black,
+);
+
+TextStyle orderItemDate = GoogleFonts.poppins(
+  fontSize: 13.sp,
+  fontWeight: FontWeight.w400,
+  color: black.withOpacity(0.80),
 );
