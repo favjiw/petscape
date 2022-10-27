@@ -3,14 +3,14 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:petscape/shared/theme.dart';
 import 'package:petscape/widgets/style/boxShadow.dart';
 
-class OrderAppointmentSuccessScreen extends StatefulWidget {
-  const OrderAppointmentSuccessScreen({Key? key}) : super(key: key);
+class OrderProductSuccessScreen extends StatefulWidget {
+  const OrderProductSuccessScreen({Key? key}) : super(key: key);
 
   @override
-  State<OrderAppointmentSuccessScreen> createState() => _OrderAppointmentSuccessScreenState();
+  State<OrderProductSuccessScreen> createState() => _OrderProductSuccessScreenState();
 }
 
-class _OrderAppointmentSuccessScreenState extends State<OrderAppointmentSuccessScreen> {
+class _OrderProductSuccessScreenState extends State<OrderProductSuccessScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -105,7 +105,7 @@ class _OrderAppointmentSuccessScreenState extends State<OrderAppointmentSuccessS
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    "Appointment Detail",
+                    "Detail Service",
                     style: orderStatusLabel,
                   ),
                   SizedBox(
@@ -115,11 +115,11 @@ class _OrderAppointmentSuccessScreenState extends State<OrderAppointmentSuccessS
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       ClipRRect(
-                        borderRadius: BorderRadius.circular(100.r),
+                        borderRadius: BorderRadius.circular(6.r),
                         child: Image.network(
-                          "https://www.pinnaclecare.com/wp-content/uploads/2017/12/bigstock-African-young-doctor-portrait-28825394.jpg",
-                          width: 54.w,
-                          height: 54.h,
+                          "https://www.wikihow.com/images_en/thumb/f/f0/Make-a-Dog-Love-You-Step-6-Version-4.jpg/v4-1200px-Make-a-Dog-Love-You-Step-6-Version-4.jpg",
+                          width: 64.w,
+                          height: 64.h,
                           fit: BoxFit.cover,
                         ),
                       ),
@@ -127,9 +127,11 @@ class _OrderAppointmentSuccessScreenState extends State<OrderAppointmentSuccessS
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text("Dr. Tracy Frost", style: orderStatusLabel,),
+                          Text("Dog Care - Showering", style: orderStatusLabel,),
                           SizedBox(height: 4.h,),
-                          Text("Cat Specialist", style: orderLocation,),
+                          Text("1 barang", style: orderLocation,),
+                          SizedBox(height: 4.h,),
+                          Text("Rp56.000", style: orderPriceSmall,),
                         ],
                       ),
                     ],
@@ -141,37 +143,6 @@ class _OrderAppointmentSuccessScreenState extends State<OrderAppointmentSuccessS
                     color: gray,
                   ),
                   SizedBox(height: 12.h,),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text("Place", style: orderTotalTxt,),
-                      Text("Rp56.000", style: orderPriceSmall,),
-                    ],
-                  ),
-                  SizedBox(height: 8.h,),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text("Lokasi", style: orderTotalTxt,),
-                      Text("20 Agustus", style: orderPriceSmall,),
-                    ],
-                  ),
-                  SizedBox(height: 8.h,),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text("Jam", style: orderTotalTxt,),
-                      Text("12:00-13:00", style: orderPriceSmall,),
-                    ],
-                  ),
-                  SizedBox(height: 12.h,),
-                  Container(
-                    width: 301.w,
-                    height: 1.h,
-                    color: gray,
-                  ),
-                  SizedBox(height: 12.h,),
-
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
@@ -197,15 +168,14 @@ class _OrderAppointmentSuccessScreenState extends State<OrderAppointmentSuccessS
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    "Lokasi Praktik",
+                    "Info pengiriman",
                     style: orderStatusLabel,
                   ),
                   SizedBox(height: 4.h,),
-                  Text("Jl. Kliningan No.6 RT 02 RW 05, Bandung, Jawa Barat, Indonesia", style: orderLocation,),
+                  Text("Jalan Kliningan No.6 Buah Batu, Bandung, Indonesia", style: orderLocation,),
                 ],
               ),
             ),
-
           ],
         ),
       ),

@@ -106,7 +106,7 @@ class _OrderServiceSuccessScreenState extends State<OrderServiceSuccessScreen> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    "Detail Produk",
+                    "Detail Service",
                     style: orderStatusLabel,
                   ),
                   SizedBox(

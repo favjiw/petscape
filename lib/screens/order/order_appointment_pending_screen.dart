@@ -219,7 +219,7 @@ class _OrderAppointmentPendingScreenState extends State<OrderAppointmentPendingS
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    "Lokasi Toko",
+                    "Lokasi Praktik",
                     style: orderStatusLabel,
                   ),
                   SizedBox(height: 4.h,),

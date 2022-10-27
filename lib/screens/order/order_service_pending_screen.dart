@@ -127,7 +127,7 @@ class _OrderServicePendingScreenState extends State<OrderServicePendingScreen> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    "Detail Produk",
+                    "Detail Service",
                     style: orderStatusLabel,
                   ),
                   SizedBox(
