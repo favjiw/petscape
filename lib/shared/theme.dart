@@ -727,6 +727,18 @@ TextStyle profileItemNamePrimary = GoogleFonts.poppins(
   color: primary,
 );
 
+TextStyle splashBy = GoogleFonts.poppins(
+  fontSize: 12.sp,
+  fontWeight: FontWeight.w500,
+  color: HexColor('#606060'),
+);
+
+TextStyle splashOrbit = GoogleFonts.poppins(
+  fontSize: 16.sp,
+  fontWeight: FontWeight.w600,
+  color: primary,
+);
+
 
 
 
