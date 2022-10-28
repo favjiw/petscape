@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:petscape/screens/feed/feed_detail_screen.dart';
 import 'package:petscape/screens/feed/feed_donation_add_screen.dart';
+import 'package:petscape/screens/feed/feed_post_add_screen.dart';
 import 'package:petscape/shared/theme.dart';
 import 'package:petscape/widgets/style/boxShadow.dart';
 import 'package:percent_indicator/percent_indicator.dart';
@@ -584,7 +585,12 @@ class _FeedScreenState extends State<FeedScreen> {
                             width: 158.w,
                             height: 46.h,
                             child: ElevatedButton(
-                              onPressed: () {},
+                              onPressed: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(builder: (context) => const FeedPostAddScreen()),
+                                );
+                              },
                               style: ElevatedButton.styleFrom(
                                 backgroundColor: primary,
                               ),
