@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:petscape/screens/feed/feed_detail_screen.dart';
+import 'package:petscape/screens/feed/feed_donation_add_screen.dart';
 import 'package:petscape/shared/theme.dart';
 import 'package:petscape/widgets/style/boxShadow.dart';
 import 'package:percent_indicator/percent_indicator.dart';
@@ -518,6 +519,90 @@ class _FeedScreenState extends State<FeedScreen> {
           ],
         ),
       ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          _showModalBottomSheet(context);
+        },
+        backgroundColor: primary,
+        child: Icon(Icons.add, color: whitish,),
+      ),
+    );
+  }
+
+  void _showModalBottomSheet(context) {
+    showModalBottomSheet(
+        context: context,
+        isScrollControlled: true,
+        backgroundColor: Colors.transparent,
+        builder: (BuildContext bc){
+          return Wrap(
+            children: [
+              Container(
+                padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 18.h),
+                decoration: BoxDecoration(
+                  color: whitish,
+                  boxShadow: [
+                    buildSecondaryBoxShadow()
+                  ]
+                ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text("Pilih Jenis Postingan", style: bottomSheetLabel,),
+                    SizedBox(height: 8.h,),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        ClipRRect(
+                          borderRadius: BorderRadius.circular(4.r),
+                          child: SizedBox(
+                            width: 158.w,
+                            height: 46.h,
+                            child: OutlinedButton(
+                              onPressed: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(builder: (context) => const FeedDonationAddScreen()),
+                                );
+                              },
+                              style: OutlinedButton.styleFrom(
+                                side: BorderSide(
+                                  width: 1.w,
+                                  color: primary,
+                                ),
+                              ),
+                              child: Text(
+                                "Donasi",
+                                style: productKeranjang,
+                              ),
+                            ),
+                          ),
+                        ),
+                        ClipRRect(
+                          borderRadius: BorderRadius.circular(4.r),
+                          child: SizedBox(
+                            width: 158.w,
+                            height: 46.h,
+                            child: ElevatedButton(
+                              onPressed: () {},
+                              style: ElevatedButton.styleFrom(
+                                backgroundColor: primary,
+                              ),
+                              child: Text(
+                                "Normal",
+                                style: productBuy,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          );
+        }
     );
   }
 }

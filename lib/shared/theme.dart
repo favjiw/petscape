@@ -691,5 +691,11 @@ TextStyle feedDonationMoneyItem = GoogleFonts.poppins(
   color: black.withOpacity(0.75),
 );
 
+TextStyle bottomSheetLabel = GoogleFonts.poppins(
+  fontSize: 14.sp,
+  fontWeight: FontWeight.w500,
+  color: black.withOpacity(0.75),
+);
+
 
 
