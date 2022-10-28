@@ -4,6 +4,7 @@ import 'package:petscape/screens/feed/feed_screen.dart';
 import 'package:petscape/screens/home/home_screen.dart';
 import 'package:petscape/screens/order/order_screen.dart';
 import 'package:petscape/screens/product/product_detail_screen.dart';
+import 'package:petscape/screens/profile/profile_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -24,7 +25,7 @@ class _MyAppState extends State<MyApp> {
         builder: (context, child) {
           return const MaterialApp(
             debugShowCheckedModeBanner: false,
-            home: FeedScreen(),
+            home: ProfileScreen(),
           );
         }
     );
