@@ -739,6 +739,38 @@ TextStyle splashOrbit = GoogleFonts.poppins(
   color: primary,
 );
 
+TextStyle onBoardWhiteOnBtn = GoogleFonts.poppins(
+  fontSize: 16.sp,
+  fontWeight: FontWeight.w600,
+  color: whitish,
+);
+
+TextStyle onBoardSkipBtn= GoogleFonts.poppins(
+  fontSize: 16.sp,
+  fontWeight: FontWeight.w500,
+  color: primary,
+);
+
+TextStyle onBoardWhiteOnBtnSmall = GoogleFonts.poppins(
+  fontSize: 16.sp,
+  fontWeight: FontWeight.w500,
+  color: whitish,
+);
+
+TextStyle onBoardTitle = GoogleFonts.poppins(
+  fontSize: 24.sp,
+  fontWeight: FontWeight.w600,
+  color: black,
+);
+
+TextStyle onBoardSubTitle = GoogleFonts.poppins(
+  fontSize: 16.sp,
+  fontWeight: FontWeight.w400,
+  color: black.withOpacity(0.80),
+);
+
+
+
 
 
 
