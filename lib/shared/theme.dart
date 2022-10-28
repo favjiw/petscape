@@ -661,5 +661,35 @@ TextStyle feedCounter = GoogleFonts.poppins(
   color: black.withOpacity(0.80),
 );
 
+TextStyle feedDetailTitle = GoogleFonts.poppins(
+  fontSize: 16.sp,
+  fontWeight: FontWeight.w600,
+  color: black,
+);
+
+TextStyle feedDetailSubTitle = GoogleFonts.poppins(
+  fontSize: 16.sp,
+  fontWeight: FontWeight.w500,
+  color: black,
+);
+
+TextStyle feedDetailDesc = GoogleFonts.poppins(
+  fontSize: 13.sp,
+  fontWeight: FontWeight.w400,
+  color: black.withOpacity(0.75),
+);
+
+TextStyle feedDonationLabel = GoogleFonts.poppins(
+  fontSize: 15.sp,
+  fontWeight: FontWeight.w600,
+  color: black.withOpacity(0.75),
+);
+
+TextStyle feedDonationMoneyItem = GoogleFonts.poppins(
+  fontSize: 16.sp,
+  fontWeight: FontWeight.w600,
+  color: black.withOpacity(0.75),
+);
+
 
 

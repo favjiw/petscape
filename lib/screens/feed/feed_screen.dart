@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:petscape/screens/feed/feed_detail_screen.dart';
 import 'package:petscape/shared/theme.dart';
 import 'package:petscape/widgets/style/boxShadow.dart';
 import 'package:percent_indicator/percent_indicator.dart';
@@ -196,100 +197,107 @@ class _FeedScreenState extends State<FeedScreen> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Container(
-                    padding: EdgeInsets.symmetric(horizontal: 11.w, vertical: 10.h),
-                    width: 329.w,
-                    decoration: BoxDecoration(
-                      color: whitish,
-                      borderRadius: BorderRadius.circular(4.r),
-                      boxShadow: [
-                        buildPrimaryBoxShadow(),
-                      ]
-                    ),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Row(
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            Row(
-                              crossAxisAlignment: CrossAxisAlignment.center,
-                              children: [
-                                ClipRRect(
-                                  borderRadius: BorderRadius.circular(100.r),
-                                  child: Image.network(
-                                    "https://www.pinnaclecare.com/wp-content/uploads/2017/12/bigstock-African-young-doctor-portrait-28825394.jpg",
-                                    width: 46.w,
-                                    height: 46.h,
-                                    fit: BoxFit.cover,
+                  InkWell(
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => const FeedDetailScreen()));
+                    },
+                    child: Container(
+                      padding: EdgeInsets.symmetric(horizontal: 11.w, vertical: 10.h),
+                      width: 329.w,
+                      decoration: BoxDecoration(
+                        color: whitish,
+                        borderRadius: BorderRadius.circular(4.r),
+                        boxShadow: [
+                          buildPrimaryBoxShadow(),
+                        ]
+                      ),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Row(
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Row(
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                children: [
+                                  ClipRRect(
+                                    borderRadius: BorderRadius.circular(100.r),
+                                    child: Image.network(
+                                      "https://www.pinnaclecare.com/wp-content/uploads/2017/12/bigstock-African-young-doctor-portrait-28825394.jpg",
+                                      width: 46.w,
+                                      height: 46.h,
+                                      fit: BoxFit.cover,
+                                    ),
                                   ),
-                                ),
-                                SizedBox(width: 12.w,),
-                                Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Text("Jennifer Turner", style: feedPostName,),
-                                    Text("41m ago", style: feedPostTime,),
-                                  ],
-                                ),
-                              ],
-                            ),
-                            IconButton(
-                                onPressed: () {},
-                                icon: Image.asset('assets/icons/option-dot-icon.png', width: 20.w, height: 20.h,),
-                            ),
-                          ],
-                        ),
-                        SizedBox(height: 8.h,),
-                        Row(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            ClipRRect(
-                              borderRadius: BorderRadius.circular(4.r),
-                              child: SizedBox(
-                                width: 87.w,
-                                height: 25.h,
-                                child: ElevatedButton(
+                                  SizedBox(width: 12.w,),
+                                  Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      Text("Jennifer Turner", style: feedPostName,),
+                                      Text("41m ago", style: feedPostTime,),
+                                    ],
+                                  ),
+                                ],
+                              ),
+                              IconButton(
                                   onPressed: () {},
-                                  style: ElevatedButton.styleFrom(
-                                    backgroundColor: secondary,
-                                  ),
-                                  child: Text(
-                                    "Donation",
-                                    style: feedDonationSmallBtn,
+                                  icon: Image.asset('assets/icons/option-dot-icon.png', width: 20.w, height: 20.h,),
+                              ),
+                            ],
+                          ),
+                          SizedBox(height: 8.h,),
+                          Row(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              ClipRRect(
+                                borderRadius: BorderRadius.circular(4.r),
+                                child: SizedBox(
+                                  width: 87.w,
+                                  height: 25.h,
+                                  child: ElevatedButton(
+                                    onPressed: () {},
+                                    style: ElevatedButton.styleFrom(
+                                      backgroundColor: secondary,
+                                    ),
+                                    child: Text(
+                                      "Donation",
+                                      style: feedDonationSmallBtn,
+                                    ),
                                   ),
                                 ),
                               ),
-                            ),
-                            SizedBox(width: 8.w),
-                            Flexible(child: Text("Anjing kurus banget", style: feedCaption,)),
-                          ],
-                        ),
-                        SizedBox(height: 8.h,),
-                        Image.network("https://img.indonesiatoday.co.id/photos/post/1660446477-anjing-golden-retriever-yang-kurus-dan-tinggal-tulang-menunggu-pemiliknya-yang-telah-meninggalkannya.jpg", width: 309.w, height: 200.h, fit: BoxFit.cover,),
-                        SizedBox(height: 8.h,),
-                        Center(
-                          child: LinearPercentIndicator(
-                            padding: EdgeInsets.zero,
-                            barRadius: Radius.circular(6.r),
-                            animation: true,
-                            animationDuration: 1000,
-                            width: 300.w,
-                            lineHeight: 10.h,
-                            percent: 0.85,
-                            progressColor: primary,
+                              SizedBox(width: 8.w),
+                              Flexible(child: Text("Anjing kurus banget", style: feedCaption,)),
+                            ],
                           ),
-                        ),
-                        SizedBox(height: 8.h,),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            Text("Target: Rp2.000.000", style: feedDonationMoney,),
-                            Text("85%", style: feedDonationPercent,),
-                          ],
-                        ),
-                      ],
+                          SizedBox(height: 8.h,),
+                          Image.network("https://img.indonesiatoday.co.id/photos/post/1660446477-anjing-golden-retriever-yang-kurus-dan-tinggal-tulang-menunggu-pemiliknya-yang-telah-meninggalkannya.jpg", width: 309.w, height: 200.h, fit: BoxFit.cover,),
+                          SizedBox(height: 8.h,),
+                          Center(
+                            child: LinearPercentIndicator(
+                              padding: EdgeInsets.zero,
+                              barRadius: Radius.circular(6.r),
+                              animation: true,
+                              animationDuration: 1000,
+                              width: 300.w,
+                              lineHeight: 10.h,
+                              percent: 0.85,
+                              progressColor: primary,
+                            ),
+                          ),
+                          SizedBox(height: 8.h,),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text("Target: Rp2.000.000", style: feedDonationMoney,),
+                              Text("85%", style: feedDonationPercent,),
+                            ],
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                   SizedBox(height: 20.h,),
